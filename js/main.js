@@ -54,6 +54,20 @@ var weekText = [
   "星期五",
   "星期六",
 ];
+var chineseText = [
+  "子时",
+  "丑时",
+  "寅时",
+  "卯时",
+  "辰时",
+  "巳时",
+  "午时",
+  "未时",
+  "申时",
+  "酉时",
+  "戌时",
+  "亥时",
+];
 var hourText = [
   "零点",
   "一点",
@@ -208,6 +222,7 @@ var clock;
 var monthList = [];
 var dayList = [];
 var weekList = [];
+var chineseList = [];
 var hourList = [];
 var minuteList = [];
 var secondsList = [];
@@ -216,6 +231,7 @@ var textSet = [
   [monthText, monthList],
   [dayText, dayList],
   [weekText, weekList],
+  [chineseText, chineseList],
   [hourText, hourList],
   [minuteText, minuteList],
   [secondsText, secondsList],
@@ -251,11 +267,12 @@ function runTime() {
   var month = now.getMonth();
   var day = now.getDate();
   var week = now.getDay();
+  var tianzhi = Math.floor(now.getHours() / 2) % 12;
   var hour = now.getHours();
   var minute = now.getMinutes();
   var seconds = now.getSeconds();
   initStyle();
-  var nowValue = [month, day - 1, week, hour, minute, seconds];
+  var nowValue = [month, day - 1, week, tianzhi, hour, minute, seconds];
   for (var i = 0; i < nowValue.length; i++) {
     var num = nowValue[i];
     textSet[i][1][num].style.color = "#fff";

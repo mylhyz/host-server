@@ -1,0 +1,20 @@
+digraph "/Users/mylhyz/Downloads/libupnp-1.14.18/ixml/src"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_31beb016aa6d7229478e8618a61a6722 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="ixml", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_31beb016aa6d7229478e8618a61a6722.html",tooltip=""]
+  dir_1aa09812ab337758aa4dbb0d92d67962 [label="inc", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_1aa09812ab337758aa4dbb0d92d67962.html",tooltip=""];
+  subgraph clusterdir_6f78653fe853c3b7b7e771f4dba979ec {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_6f78653fe853c3b7b7e771f4dba979ec.html",tooltip=""]
+    dir_6f78653fe853c3b7b7e771f4dba979ec [shape=plaintext, label="src"];
+  dir_2e84def452b87cd6daaa0bcefd6429cf [label="inc", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_2e84def452b87cd6daaa0bcefd6429cf.html",tooltip=""];
+  }
+  }
+  dir_6f78653fe853c3b7b7e771f4dba979ec->dir_1aa09812ab337758aa4dbb0d92d67962 [headlabel="7", labeldistance=1.5 headhref="dir_000018_000007.html" href="dir_000018_000007.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_6f78653fe853c3b7b7e771f4dba979ec->dir_2e84def452b87cd6daaa0bcefd6429cf [headlabel="10", labeldistance=1.5 headhref="dir_000018_000008.html" href="dir_000018_000008.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_2e84def452b87cd6daaa0bcefd6429cf->dir_1aa09812ab337758aa4dbb0d92d67962 [headlabel="2", labeldistance=1.5 headhref="dir_000008_000007.html" href="dir_000008_000007.html" color="steelblue1" fontcolor="steelblue1"];
+}

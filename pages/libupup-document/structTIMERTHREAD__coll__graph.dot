@@ -1,0 +1,29 @@
+digraph "TIMERTHREAD"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",label="TIMERTHREAD",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [id="edge1_Node000001_Node000002",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" eventQ",fontcolor="grey" ];
+  Node2 [id="Node000002",label="LINKEDLIST",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structLINKEDLIST.html",tooltip=" "];
+  Node3 -> Node2 [id="edge2_Node000002_Node000003",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" head\ntail",fontcolor="grey" ];
+  Node3 [id="Node000003",label="LISTNODE",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structLISTNODE.html",tooltip=" "];
+  Node3 -> Node3 [id="edge3_Node000003_Node000003",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" next\nprev",fontcolor="grey" ];
+  Node4 -> Node2 [id="edge4_Node000002_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" freeNodeList",fontcolor="grey" ];
+  Node4 [id="Node000004",label="FREELIST",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structFREELIST.html",tooltip=" "];
+  Node5 -> Node4 [id="edge5_Node000004_Node000005",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" head",fontcolor="grey" ];
+  Node5 [id="Node000005",label="FREELISTNODE",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structFREELISTNODE.html",tooltip=" "];
+  Node5 -> Node5 [id="edge6_Node000005_Node000005",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" next",fontcolor="grey" ];
+  Node4 -> Node1 [id="edge7_Node000001_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" freeEvents",fontcolor="grey" ];
+  Node6 -> Node1 [id="edge8_Node000001_Node000006",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" tp",fontcolor="grey" ];
+  Node6 [id="Node000006",label="THREADPOOL",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structTHREADPOOL.html",tooltip="A thread pool similar to the thread pool in the UPnP SDK."];
+  Node4 -> Node6 [id="edge9_Node000006_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" jobFreeList",fontcolor="grey" ];
+  Node2 -> Node6 [id="edge10_Node000006_Node000002",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" highJobQ\nlowJobQ\nmedJobQ",fontcolor="grey" ];
+  Node7 -> Node6 [id="edge11_Node000006_Node000007",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" persistentJob",fontcolor="grey" ];
+  Node7 [id="Node000007",label="THREADPOOLJOB",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structTHREADPOOLJOB.html",tooltip=" "];
+  Node8 -> Node6 [id="edge12_Node000006_Node000008",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" attr",fontcolor="grey" ];
+  Node8 [id="Node000008",label="THREADPOOLATTR",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structTHREADPOOLATTR.html",tooltip=" "];
+  Node9 -> Node6 [id="edge13_Node000006_Node000009",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" stats",fontcolor="grey" ];
+  Node9 [id="Node000009",label="TPOOLSTATS",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structTPOOLSTATS.html",tooltip=" "];
+}

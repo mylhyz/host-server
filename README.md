@@ -6,6 +6,7 @@
 
 - 掐指一算 https://mylhyz.github.io/host-server/pages/fortune-telling/
 
+- libupnp 文档 https://mylhyz.github.io/host-server/pages/libupup-document/
 
 ### License
 
